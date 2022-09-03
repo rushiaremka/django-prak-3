@@ -2,6 +2,7 @@
 
 Platform-Based Programming (CSGE602022) - Organized by the Faculty of Computer Science Universitas Indonesia, Odd Term 2022/2023
 
+*Read this in other languages: [Indonesia](README.md), [English](README.en.md)*
 ## Preliminary
 
 This repository is a template that is designed to help students who take the Program-based Development/Programming Course (CSGE602022) to know the structure of a Django application project and the files and configurations that are important in running the application. You can freely copy the contents of this repository or utilize this repository as a learning material and also as a starting point to build a Django application project.
