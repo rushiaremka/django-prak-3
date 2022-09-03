@@ -1,4 +1,4 @@
-# PBP Django Project Template
+# PBD Django Project Template
 
 Platform-Based Programming (CSGE602022) - Organized by the Faculty of Computer Science Universitas Indonesia, Odd Term 2022/2023
 
@@ -32,7 +32,7 @@ If you want to use this repository as a starter repository that you will later m
 
 In this template, the deployment is completed by utilizing GitHub Actions as a runner and Heroku as an application Hosting platform.
 
-To implement the deployment, you can read the instructions at [Tutorial-0](https://github.com/pbp-fasilkom-ui/ganjil-2023/blob/master/assignments/tutorial/tutorial-0.md).
+To implement the deployment, you can read the instructions at [Tutorial-0](https://pbp-fasilkom-ui.github.io/ganjil-2023/en/assignments/tutorial/tutorial-0/).
 
 For the deployed Django application example, you can access it at  [https://django-pbp-template.herokuapp.com/](https://django-pbp-template.herokuapp.com/)
 
