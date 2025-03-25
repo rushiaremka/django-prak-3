@@ -13,32 +13,30 @@ pipeline {
         stage('Setup Virtual Environment') {
             steps {
                 sh '''
+                rm -rf $VIRTUAL_ENV  # Hapus venv jika sudah ada
                 python3 -m venv $VIRTUAL_ENV
-                source $VIRTUAL_ENV/bin/activate
-                pip install -r requirements.txt
+                bash -c "source $VIRTUAL_ENV/bin/activate && pip install --upgrade pip && pip install -r requirements.txt"
                 '''
             }
         }
         stage('Run Migrations') {
             steps {
                 sh '''
-                source $VIRTUAL_ENV/bin/activate
-                python manage.py migrate
+                bash -c "source $VIRTUAL_ENV/bin/activate && python manage.py migrate"
                 '''
             }
         }
         stage('Run Tests') {
             steps {
                 sh '''
-                source $VIRTUAL_ENV/bin/activate
-                python manage.py test --verbosity=2
+                bash -c "source $VIRTUAL_ENV/bin/activate && python manage.py test --verbosity=2"
                 '''
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying Django application...'
-                echo 'push into server'
+                echo 'Push into server'
             }
         }
     }
